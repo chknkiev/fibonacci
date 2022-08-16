@@ -22,9 +22,7 @@ function fibsRec(n, arr = [0, 1]) {
   } else if(n === 1) {
     return console.log(arr);
   } else if (n > 2) {
-    let a = arr[arr.length - 2];
-    let b = arr[arr.length - 1];
-    arr.push(a + b);
+    arr.push(arr[arr.length - 2] + arr[arr.length - 1]);
     console.log(arr);
     return fibsRec(n - 1, arr);
   }
